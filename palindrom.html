@@ -1,0 +1,31 @@
+<html>
+
+	<head>
+		<p>Click the following button and see result</p>      
+      <form>
+         <input type = "button" onclick = "Getdata(1524251)" value = "check" />
+      </form> 
+		<script>
+			var n;
+			function Getdata(n)
+			{
+				var temp;
+				var pal = 0;
+				var BU = n;
+				while(n != 0){
+
+				temp = n % 10;
+				pal = (pal * 10)+temp;
+				n = Math.floor(n /10);
+				}
+				if(pal == BU){
+					document.write(BU + " Is palindrom");
+				}
+				else{
+					document.write(BU + " Is not Palindrom");
+				}
+			}
+</script>
+
+	</head>
+</html>
